@@ -1,0 +1,282 @@
+body{
+    font-family: Arial, sans-serif;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index:1;
+    top: 0;
+    left: 0;
+    background: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+nav .logo {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 17px;
+    font-weight: 480;
+    text-decoration: none;
+     
+}
+
+nav ul li a:hover {
+    color: #aab1ba;
+}
+
+.image{
+    background-image: url(./architect.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+}
+
+.image h1 {
+    color: white;
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+.image h1 span{
+    color: rgba(240, 240, 240, 0.936);
+    font-size: 48px;
+    text-transform: uppercase;
+ 
+}
+.projects h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    padding: 20px;
+}
+.project_images{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.project_images .img {
+    position: relative;
+    max-width: calc(25% - 20px);
+    margin-bottom: 20px;
+
+}
+.project_images .img img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+.caption {
+    position: absolute;
+    bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+.about h2{
+        padding:20px;
+        font-size: 25px;
+        border-bottom: 1.5px solid #ccc;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+}
+.about p {
+    margin-bottom: 20px;
+    color: #101010;
+    padding:20px;
+}
+.team{
+    display:flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+}
+.member{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: calc(23% - 20px); 
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.member img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.member h3 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #333;
+}
+
+.member .role {
+    margin-bottom:15px;
+    color: #777;
+    
+}
+
+.member p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #2c2b2b;
+}
+
+.member button {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 140px;
+    color: #333;
+}
+.member button:hover {
+    background-color: #e0e0e0;
+}
+ .contact-container {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 1450px;
+}
+
+.contact-container h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.contact-container p {
+    margin-bottom: 20px;
+    color: #171616;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+}
+button {
+    padding: 12px;
+    margin: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14px;
+}
+button:hover {
+    background-color: #333333;
+}
+.image-container{
+    position: relative;
+    max-width: 100%;
+}
+.image-container img{
+    width: 100%;
+    height: auto;
+}
+.link{
+    color: #000000;
+    background-color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+.link p{
+    color: white;
+}
+
+ .link a {
+    color: #cccccc;
+     
+}
+ .link a:hover {
+    color: #25d337;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        background-color: #fff;
+        padding: 10px 20px;
+    }
+
+    .nav ul li a {
+        font-size: 16px;
+    }
+
+    .image {
+        height: 60vh;
+    }
+
+    .image h1 {
+        font-size: 32px;
+    }
+
+    .projects h2, .about h2 {
+        font-size: 20px;
+    }
+
+    .project_images .img {
+        max-width: calc(50% - 20px);
+    }
+
+    .team {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .member {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .member button {
+        padding: 10px 60px;
+    }
+
+    .contact-container {
+        width: 100%;
+    }
+
+    button {
+        padding: 12px;
+        margin: 10px;
+        width: 100%;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media  (min-width: 1024px) {
+   
+}
